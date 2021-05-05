@@ -1,0 +1,33 @@
+
+\documentclass[11pt, a4paper]{my_resume}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+\fontdir[fonts/]
+
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\makeatletter
+\patchcmd{\@sectioncolor}{\color}{\mdseries\color}{}{}
+\makeatother
+
+\name{Soorya}{Saravanapavan}
+\position{4th Year Software Engineering Student at the University of Ottawa}
+
+\email{ssara031@uottawa.ca}
+\homepage{https://soorya.io}
+\github{suri111200}
+\linkedin{/in/soorya-s}
+
+
+\begin{document}
+
+\makecvheader[C]
+
+
+\input{skills.tex}
+\input{education.tex}
+\input{experience.tex}
+\input{projects.tex}
+
+\end{document}
